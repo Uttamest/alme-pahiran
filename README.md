@@ -1,4 +1,3 @@
-```html
 <h1 align="center">👗 AlMe Pahiran</h1>
 
 <h3 align="center">
@@ -391,4 +390,3 @@ This project was developed as a university group ecommerce project to demonstrat
 <hr>
 
 <h2 align="center">🇳🇵 Thank You for Visiting AlMe Pahiran 🇳🇵</h2>
-```
