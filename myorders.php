@@ -1,5 +1,6 @@
 <?php
 require_once 'config/init.php';
+require_login();
 
 $page_title = 'My Orders - AlMe Pahiran';
 $orders = get_rows($conn, 'SELECT * FROM orders WHERE user_id = ? ORDER BY created_at DESC', 'i', [$_SESSION['user_id']]);
