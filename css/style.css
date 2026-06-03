@@ -1,0 +1,150 @@
+/*
+    AlMe Pahiran CSS
+    Plain CSS only. Colors are inspired by maroon tika, marigold flowers,
+    dhaka textile tones, and teal jewelry accents.
+*/
+
+:root {
+    --maroon: #8b1e3f;
+    --deep-maroon: #4c1024;
+    --marigold: #f2b632;
+    --teal: #16746f;
+    --leaf: #4f7f37;
+    --cream: #fff8ea;
+    --paper: #fffdf7;
+    --soft-gold: #fbefd0;
+    --ink: #2d2325;
+    --muted: #715f62;
+    --border: #e8d4b2;
+    --danger: #b3261e;
+    --success: #1f7a43;
+    --shadow: 0 12px 28px rgba(74, 38, 24, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--maroon);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.site-header {
+    background: var(--deep-maroon);
+    color: white;
+    border-bottom: 4px solid var(--marigold);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.top-bar {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    color: #ffe9ae;
+    font-size: 14px;
+}
+
+.top-bar p {
+    margin: 0;
+}
+
+.top-social,
+.social-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.top-social a,
+.social-row a {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 6px;
+    color: white;
+    padding: 7px 10px;
+    font-weight: bold;
+}
+
+.top-social a:hover,
+.social-row a:hover {
+    background: var(--marigold);
+    color: var(--deep-maroon);
+    text-decoration: none;
+}
+
+.navbar {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    display: grid;
+    grid-template-columns: auto minmax(260px, 430px) auto;
+    align-items: center;
+    gap: 22px;
+}
+
+.admin-navbar {
+    grid-template-columns: auto 1fr;
+}
+
+.brand {
+    color: white;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.brand span {
+    display: block;
+    font-size: 28px;
+}
+
+.brand small {
+    display: block;
+    color: var(--marigold);
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.brand:hover {
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
